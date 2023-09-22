@@ -1,1 +1,39 @@
 /*Schrijf hier jouw CSS*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  flex-basis: 15%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+main article {
+  flex-grow: 4;
+  flex-shrink: 1;
+}
+nav {
+  flex-basis: 20vw;
+  flex-grow: 1;
+  flex-shrink: 0;
+  order: 3;
+}
+aside {
+  flex-basis: 20vw;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+footer {
+  width: 100%;
+  align-self: flex-end;
+  flex-basis: 15%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
